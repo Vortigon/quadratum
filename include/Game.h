@@ -1,13 +1,16 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "Field.h"
+#include "GameUI.h"
 
 class Game {
 public:
 	Game();
+
+	void init();
+	void run();
 private:
-	Field* field;
+	GameUI gameUI;
 };
 
 #endif /* GAME_H */
